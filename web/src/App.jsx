@@ -1,3 +1,5 @@
+import {HeartIcon} from '@heroicons/react/outline'
+
 function Tweet({name, username, avatar, children}){
   return(<div className="flex space-x-3 p-4 border-b border-silver">
   <div>
@@ -9,6 +11,7 @@ function Tweet({name, username, avatar, children}){
     <span className="text-sm text-silver"> @{username}</span>
 
     <p>{children}</p>
+    <HeartIcon className="w-6 stroke-1 stroke-silver"/>
   </div>
 </div>)
 }
